@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSH Setup and Website Hosting</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SSH Setup and Website Hosting</h1>
+      <div class="name">Presented by: <b>Ihor Huz'</b></div>
+    </header>
+    <main>
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          This is the website which introduces my Final Linux Project from Web
+          Development course in Lodz University of Technology. Main objective of
+          this project is to create two virtual machines, server and client,
+          connect them via SSH protocol and show that it is possible, to access
+          this website on the client machine.
+        </p>
+      </section>
+      <section>
+        <h2>Preparation</h2>
+        <p>
+          I began my final project by conducting research and outlining the
+          steps required to achieve my ultimate goal: setting up a website
+          showcasing my experience with SSH on a master-slave virtual machine
+          configuration. This included managing files on my Ubuntu Server and
+          documenting the process in a clear and structured manner.
+        </p>
+        <p>
+          At first, I created and configured the first VM. In the process, I set
+          the IP to the static:
+        </p>
+        <div class="image">
+          <img src="static/img/1.png" />
+        </div>
+      </section>
+      <section>
+        <h2>Installing and Configuring OpenSSH</h2>
+        <p>
+          Finally, after the configuration, I applied the commands to enable the
+          Firewall and tried to connect my first VM to my Windows device via
+          cmd. It worked:
+        </p>
+        <div class="image">
+          <img src="static/img/2.png" />
+        </div>
+        <p>I also tried via other devices, and it worked:</p>
+        <div class="image">
+          <img src="static/img/3.png" />
+        </div>
+      </section>
+      <section>
+        <h2>Establishing SSH Connection Between Client and Server</h2>
+        <p>
+          This division basically explains testing SSH locally on each VM and
+          remotely between the client and server.
+        </p>
+        <p>
+          Right after creating the first VM and configuring everything
+          successfully there, I created the second VM and set it up as a client.
+          After the configuration process and checking the SSH on the client VM,
+          I tried to connect the client to the server via ssh and succeeded.
+          Here’s how it looked like:
+        </p>
+        <div class="image">
+          <img src="static/img/4.png" />
+        </div>
+        <p>
+          Next, I obviously tried to do the same but from the Master machine.
+          Here's how it looked like:
+        </p>
+        <div class="image">
+          <img src="static/img/5.png" />
+        </div>
+      </section>
+      <section>
+        <h2>Installing PuTTY</h2>
+        <p>
+          At this stage, almost everything was already done, but nor PuTTY
+          configuration. So, after playing with my servers for a while I went to
+          the necessary link and installed PuTTY on my PC. Instantly, I saved
+          needed addresses and tried to connect using SSH.
+        </p>
+        <div class="image">
+          <img src="static/img/6.png" />
+        </div>
+        <p>PuTTY connection window looked pretty much like other windows:</p>
+        <div class="image">
+          <img src="static/img/7.png" />
+        </div>
+      </section>
+      <section>
+        <h2>Building and Hosting the Website</h2>
+        <p>As a final step, I installed Apache in the server:</p>
+        <div class="image">
+          <img src="static/img/8.png" />
+        </div>
+        <p>Then, created this website🖖:</p>
+        <div class="image">
+          <img src="static/img/9.png" />
+        </div>
+        <p>
+          And using few commands and PuTTY delivered the necessary files to the
+          server.
+        </p>
+      </section>
+      <section>
+        <h2>Conclusion</h2>
+        <p>
+          This project was successfully implemented, and the process is now
+          documented for future reference.
+        </p>
+      </section>
+    </main>
+    <footer
+      style="
+        text-align: center;
+        padding: 1rem;
+        background-color: #111;
+        color: #aaa;
+        font-size: 0.8rem;
+      "
+    >
+      © 2025 Ihor Huz'. All Rights Reserved.
+    </footer>
+  </body>
+</html>
