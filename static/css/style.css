@@ -23,6 +23,11 @@ header h1 {
   color: #f4a261;
 }
 
+header h1:hover {
+  color: #e76f51;
+  transition: color 0.3s ease;
+}
+
 header .name {
   font-size: 1rem;
   font-weight: 700;
@@ -56,6 +61,7 @@ img {
   max-width: 100%;
   margin: 1rem 0;
   border: 2px solid #444;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .image {
@@ -67,4 +73,54 @@ img {
   padding: 1rem;
   font-style: italic;
   margin: 10px auto;
+}
+
+a {
+  color: #f4a261;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+  color: #e76f51;
+  text-decoration: underline;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px 2px #f4a261;
+}
+
+.side-nav {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+  z-index: 1000;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav li {
+  margin: 0.5rem 0;
+}
+
+.side-nav a {
+  color: #f4a261;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.side-nav a:hover {
+  color: #e76f51;
+  text-decoration: underline;
 }
