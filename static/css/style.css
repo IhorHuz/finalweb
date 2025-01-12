@@ -93,7 +93,7 @@ img:hover {
 }
 
 .side-nav {
-  position: fixed;
+  position: absolute;
   top: 100px;
   right: 20px;
   background-color: #111;
