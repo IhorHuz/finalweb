@@ -21,6 +21,7 @@ header h1 {
   margin: 0;
   text-align: left;
   color: #f4a261;
+  transition: color 0.3s ease;
 }
 
 header h1:hover {
